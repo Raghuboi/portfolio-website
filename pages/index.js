@@ -1,5 +1,11 @@
+import { Container, Box } from '@chakra-ui/react'
+
 const Page = () => {
-  return <h1>Hello</h1>
+  return (
+    <Container>
+      <Box borderRadius="lg">Hello</Box>
+    </Container>
+  )
 }
 
 export default Page
