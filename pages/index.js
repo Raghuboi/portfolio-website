@@ -50,7 +50,7 @@ const Page = () => {
           >
             University Of Winnipeg
           </Text>
-          , i'm also avidly interested in Security, User-Authentication,
+          , i&apos;m also avidly interested in Security, User-Authentication,
           WebSockets &amp; building/consuming REST APIs. You can see me
           implementing a mix of these throughout my projects.
           <br />
