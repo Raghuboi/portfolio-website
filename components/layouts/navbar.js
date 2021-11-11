@@ -7,8 +7,14 @@ import {
   Stack,
   Heading,
   Flex,
+  Menu,
+  MenuItem,
+  MenuList,
+  MenuButton,
+  IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -70,6 +76,30 @@ const Navbar = props => {
             Contact
           </LinkItem>
         </Stack>
+
+        <Box flex={1} align="right">
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>Portfolio</MenuItem>
+                </NextLink>
+                <NextLink href="/resume" passHref>
+                  <MenuItem as={Link}>Resume</MenuItem>
+                </NextLink>
+                <NextLink href="/contact" passHref>
+                  <MenuItem as={Link}>Contact</MenuItem>
+                </NextLink>
+              </MenuList>
+            </Menu>
+          </Box>
+        </Box>
       </Container>
     </Box>
   )
