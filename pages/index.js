@@ -14,7 +14,7 @@ import NextLink from 'next/link'
 
 const Page = () => {
   return (
-    <Container>
+    <Container pt={6}>
       <Box
         borderRadius="lg"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
