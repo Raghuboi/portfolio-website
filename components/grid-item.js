@@ -1,9 +1,7 @@
-import NextLink from 'next/link'
 import Image from 'next/image'
 import {
   Box,
   Text,
-  Button,
   LinkBox,
   LinkOverlay,
   SimpleGrid,
@@ -29,7 +27,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const WorkGridItem = ({ children, title, thumbnail }) => (
   <SimpleGrid
     borderRadius="12px"
     p={4}
