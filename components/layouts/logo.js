@@ -21,8 +21,6 @@ const LogoBox = styled.span`
   }
 `
 const Logo = () => {
-  const codeImg = `/images/contents/code-solid.svg`
-
   return (
     <Link href="/">
       <a>
