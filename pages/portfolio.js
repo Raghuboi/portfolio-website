@@ -1,5 +1,5 @@
-import { Container, Heading, VStack } from '@chakra-ui/react'
-import { WorkGridItem } from '../components/grid-item'
+import { Container, Heading, VStack, Alert, AlertIcon } from '@chakra-ui/react'
+import { ProjectItem } from '../components/project-item'
 import Layout from '../components/layouts/projects'
 import Section from '../components/section'
 
@@ -13,25 +13,27 @@ const Portfolio = () => {
         <Heading as="h3" fontSize={20} mb={4}>
           Projects
         </Heading>
+        <Section>
+          <Alert borderRadius={20} status="info">
+            <AlertIcon />
+            Click on a Project for more information
+          </Alert>
+        </Section>
         <VStack>
-          <Section>
-            <WorkGridItem
+          <Section delay={0.1}>
+            <ProjectItem
               id="poker"
               title="Multiplayer Poker Game"
               thumbnail={pokerInGame}
             >
               WebSocket based Poker with User Authentication
-            </WorkGridItem>
+            </ProjectItem>
           </Section>
-          <Section delay={0.1}>
-            <WorkGridItem
-              id="snake-ai"
-              title="Snake AI"
-              thumbnail={snakeInGame}
-            >
+          <Section delay={0.2}>
+            <ProjectItem id="snake-ai" title="Snake AI" thumbnail={snakeInGame}>
               Re-creation of the classic Snake game given an AI with pathfinding
               algorithms
-            </WorkGridItem>
+            </ProjectItem>
           </Section>
         </VStack>
       </Container>

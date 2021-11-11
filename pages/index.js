@@ -15,16 +15,6 @@ import NextLink from 'next/link'
 const Page = () => {
   return (
     <Container pt={6}>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        p={3}
-        mb={6}
-        align="center"
-      >
-        Full-stack developer based in Winnipeg ❄️
-      </Box>
-
       <Box display={{ md: 'flex-grow' }}>
         <Heading as="h2" variant="page-title">
           Raghunath Prabhakar
@@ -34,7 +24,7 @@ const Page = () => {
 
       <Spacer p="0.5rem" />
 
-      <Section delay={0.1}>
+      <Section>
         <Heading as="h3" variant="section-title">
           About
         </Heading>
@@ -42,7 +32,7 @@ const Page = () => {
           I am a Full-stack developer based in Winnipeg, Manitoba.
           <br />
           <br />
-          Having majored in Applied Computer Science from the{' '}
+          Having majored in Applied Computer Science (B.Sc) from the{' '}
           <Text
             display="inline"
             fontWeight="semibold"
@@ -50,12 +40,12 @@ const Page = () => {
           >
             University Of Winnipeg
           </Text>
-          , i&apos;m also avidly interested in Security, User-Authentication,
-          WebSockets &amp; building/consuming REST APIs. You can see me
-          implementing a mix of these throughout my projects.
+          , I am also avidly interested in Security, User Authentication, UI/UX
+          design and working with REST APIs. You can see me implementing a mix
+          of these throughout my projects.
           <br />
           <br />
-          Obsessed with Agile principles and values, I also hold a Google
+          Fascinated by Agile principles and values, I also hold a Google
           Careers Certification in Project Management.
         </Paragraph>
         <Box align="center" my={4}>
