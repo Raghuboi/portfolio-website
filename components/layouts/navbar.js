@@ -12,12 +12,14 @@ import {
   MenuList,
   MenuButton,
   IconButton,
+  Divider,
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from '../theme-toggle-button'
+import { IoLogoGithub } from 'react-icons/io5'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+const LinkItem = ({ href, path, isExternal, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
@@ -28,7 +30,8 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         borderRadius={5}
         bg={active ? useColorModeValue('purple.500', 'purple.200') : undefined} // eslint-disable-line
         color={active ? useColorModeValue('white', 'black') : inactiveColor} // eslint-disable-line
-        _target={_target}
+        isExternal={isExternal}
+        href={isExternal && href}
         {...props}
       >
         {children}
@@ -80,25 +83,42 @@ const Navbar = props => {
           <LinkItem href="/contact" path={path}>
             Contact
           </LinkItem>
+          <LinkItem
+            href="https://github.com/Raghuboi"
+            path={path}
+            isExternal={true}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            GitHub
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
+            <Menu autoSelect={false}>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
               />
-              <MenuList>
-                <NextLink href="/" passHref>
+              <MenuList
+                fontSize={18}
+                bg={useColorModeValue('white', '#2E2E2E')}
+              >
+                <NextLink href="/portfolio" passHref>
                   <MenuItem as={Link}>Portfolio</MenuItem>
                 </NextLink>
+                <Divider />
                 <NextLink href="/resume" passHref>
                   <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
+                <Divider />
                 <NextLink href="/contact" passHref>
                   <MenuItem as={Link}>Contact</MenuItem>
                 </NextLink>

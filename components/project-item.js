@@ -8,8 +8,8 @@ export const ProjectItem = ({ children, title, id, thumbnail }) => (
     <SimpleGrid
       cursor="pointer"
       className="noselect"
-      borderRadius={20}
       p={4}
+      borderRadius={8}
       bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
       _hover={{ bg: useColorModeValue('whiteAlpha.700', 'whiteAlpha.200') }}
       columns={[null, null, 2]}
@@ -20,7 +20,7 @@ export const ProjectItem = ({ children, title, id, thumbnail }) => (
         <Text mb={2} textAlign="start" fontWeight="semibold">
           {title}
         </Text>
-        <Text mb={2} textAlign="start" fontSize={14}>
+        <Text mb={2} textAlign="start" fontSize={15}>
           {children}
         </Text>
       </Box>
@@ -38,7 +38,7 @@ export const GridItemStyle = () => (
   <Global
     styles={`
       .grid-item-thumbnail {
-        border-radius: 15px;
+        border-radius: none;
       }
     `}
   />

@@ -13,14 +13,14 @@ const Portfolio = () => {
         <Heading as="h3" fontSize={20} mb={4}>
           Projects
         </Heading>
-        <Section>
+        <Section mb={3}>
           <Alert borderRadius={20} status="info">
             <AlertIcon />
             Click on a Project for more information
           </Alert>
         </Section>
         <VStack>
-          <Section delay={0.1}>
+          <Section mb={1.5} delay={0.1}>
             <ProjectItem
               id="poker"
               title="Multiplayer Poker Game"
@@ -29,8 +29,8 @@ const Portfolio = () => {
               WebSocket based Poker with User Authentication
             </ProjectItem>
           </Section>
-          <Section delay={0.2}>
-            <ProjectItem id="snake-ai" title="Snake AI" thumbnail={snakeInGame}>
+          <Section mb={1.5} delay={0.2}>
+            <ProjectItem id="snake" title="Snake AI" thumbnail={snakeInGame}>
               Re-creation of the classic Snake game given an AI with pathfinding
               algorithms
             </ProjectItem>
