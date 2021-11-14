@@ -31,7 +31,7 @@ const Page = () => {
           About
         </Heading>
         <Paragraph>
-          I am a Full-stack developer based in Winnipeg, Manitoba.
+          I am a Full-stack developer based in Winnipeg, Manitoba
           <br />
           <br />
           Having majored in Applied Computer Science (B.Sc) from the{' '}
@@ -47,11 +47,11 @@ const Page = () => {
           </Link>
           , I am also avidly interested in Security, User Authentication, UI/UX
           design and working with REST APIs. You can see me implementing a mix
-          of these throughout my projects.
-          {/*<br />
+          of these throughout my projects
           <br />
-          Fascinated by Agile principles and values, I also hold a Google
-          Careers Certification in Project Management.*/}
+          <br />
+          Fascinated by Agile principles and values, I am also pursuing a Google
+          Careers Certification in Project Management
         </Paragraph>
         <HStack justify="center" spacing={4} my={4}>
           <NextLink href="/portfolio">
