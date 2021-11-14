@@ -17,6 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { CheckIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
+import Layout from '../components/layouts/projects'
 
 const initialValues = {
   email: '',
@@ -74,77 +75,79 @@ const Contact = () => {
       <Heading as="h3" variant="section-title" mb={6}>
         Contact Me
       </Heading>
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={async (values, actions) => {
-          if (delivered)
-            toast({
-              title: 'Your message has already been recieved',
-              status: 'success',
-              duration: 9000,
-              isClosable: true
-            })
-          else await onContactFormSubmit(values)
-          actions.setSubmitting(false)
-        }}
-      >
-        {({ errors, touched, isSubmitting, isValid }) => (
-          <Form>
-            <VStack justify="center" align="center">
-              <Section m={0} w="100%">
-                <CustomInputField
-                  bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')} //eslint-disable-line
-                  name="fullname"
-                  label="Full Name"
-                  placeholder="What's your full name?"
-                  error={errors.fullname}
-                  touched={touched.fullname}
-                />
-              </Section>
-              <Section delay={0.025} m={0} w="100%">
-                <CustomInputField
-                  bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')} //eslint-disable-line
-                  name="email"
-                  label="Email address"
-                  placeholder="you@example.com"
-                  error={errors.email}
-                  touched={touched.email}
-                />
-              </Section>
-              <Section delay={0.05} m={0} w="100%">
-                <CustomInputArea
-                  bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')} //eslint-disable-line
-                  name="message"
-                  label="Message"
-                  placeholder="Write your message here"
-                  error={errors.message}
-                  touched={touched.message}
-                />
-              </Section>
-              <Spacer />
-              <Section delay={0.075} m={0}>
-                <Button
-                  isLoading={isSubmitting}
-                  isDisabled={!isValid}
-                  type="submit"
-                  colorScheme={(delivered && 'green') || 'purple'}
-                  size="md"
-                  width={120}
-                  variant="solid"
-                >
-                  {!delivered && 'Submit'}
-                  {delivered && (
-                    <>
-                      Delivered <CheckIcon ml={2} />
-                    </>
-                  )}
-                </Button>
-              </Section>
-            </VStack>
-          </Form>
-        )}
-      </Formik>
+      <Layout title="Contact">
+        <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={async (values, actions) => {
+            if (delivered)
+              toast({
+                title: 'Your message has already been recieved',
+                status: 'success',
+                duration: 9000,
+                isClosable: true
+              })
+            else await onContactFormSubmit(values)
+            actions.setSubmitting(false)
+          }}
+        >
+          {({ errors, touched, isSubmitting, isValid }) => (
+            <Form>
+              <VStack justify="center" align="center">
+                <Section m={0} w="100%">
+                  <CustomInputField
+                    bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')} //eslint-disable-line
+                    name="fullname"
+                    label="Full Name"
+                    placeholder="What's your full name?"
+                    error={errors.fullname}
+                    touched={touched.fullname}
+                  />
+                </Section>
+                <Section delay={0.025} m={0} w="100%">
+                  <CustomInputField
+                    bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')} //eslint-disable-line
+                    name="email"
+                    label="Email address"
+                    placeholder="you@example.com"
+                    error={errors.email}
+                    touched={touched.email}
+                  />
+                </Section>
+                <Section delay={0.05} m={0} w="100%">
+                  <CustomInputArea
+                    bg={useColorModeValue('whiteAlpha.600', 'whiteAlpha.50')} //eslint-disable-line
+                    name="message"
+                    label="Message"
+                    placeholder="Write your message here"
+                    error={errors.message}
+                    touched={touched.message}
+                  />
+                </Section>
+                <Spacer />
+                <Section delay={0.075} m={0}>
+                  <Button
+                    isLoading={isSubmitting}
+                    isDisabled={!isValid}
+                    type="submit"
+                    colorScheme={(delivered && 'green') || 'purple'}
+                    size="md"
+                    width={120}
+                    variant="solid"
+                  >
+                    {!delivered && 'Submit'}
+                    {delivered && (
+                      <>
+                        Delivered <CheckIcon ml={2} />
+                      </>
+                    )}
+                  </Button>
+                </Section>
+              </VStack>
+            </Form>
+          )}
+        </Formik>
+      </Layout>
     </Container>
   )
 }

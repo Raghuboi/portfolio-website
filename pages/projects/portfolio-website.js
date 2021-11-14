@@ -13,7 +13,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/projects'
 
 const Project = () => (
-  <Layout title="Snake">
+  <Layout title="Portfolio Website">
     <Container className="noselect" pt={6}>
       <Title>Portfolio Website</Title>
       <P>

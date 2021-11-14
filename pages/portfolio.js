@@ -31,9 +31,9 @@ const Portfolio = () => {
         <AlertIcon />
         Click on a Project for more information
       </Alert>
-      <Layout>
-        <VStack>
-          <Section mb={1.5} delay={0.025}>
+      <Layout title="Portfolio">
+        <VStack spacing={3}>
+          <Section m={0} delay={0.025}>
             <ProjectItem
               id="portfolio-website"
               title="Portfolio Website"
@@ -43,7 +43,7 @@ const Portfolio = () => {
               Next.js
             </ProjectItem>
           </Section>
-          <Section mb={1.5} delay={0.05}>
+          <Section m={0} delay={0.05}>
             <ProjectItem
               id="poker"
               title="Multiplayer Poker Game"
@@ -52,7 +52,7 @@ const Portfolio = () => {
               WebSocket based Poker with User Authentication
             </ProjectItem>
           </Section>
-          <Section mb={1.5} delay={0.075}>
+          <Section m={0} delay={0.075}>
             <ProjectItem id="snake" title="Snake AI" thumbnail={snakeInGame}>
               Re-creation of the classic Snake game given an AI with pathfinding
               algorithms

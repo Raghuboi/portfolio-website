@@ -12,7 +12,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/projects'
 
 const Project = () => (
-  <Layout title="Snake">
+  <Layout title="Snake AI">
     <Container className="noselect" pt={6}>
       <Title>Snake AI</Title>
       <P>

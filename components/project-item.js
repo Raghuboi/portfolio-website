@@ -8,10 +8,11 @@ export const ProjectItem = ({ children, title, id, thumbnail }) => (
     <SimpleGrid
       cursor="pointer"
       className="noselect"
-      p={4}
-      borderRadius={8}
-      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
-      _hover={{ bg: useColorModeValue('whiteAlpha.700', 'whiteAlpha.200') }}
+      py={2.5}
+      px={4}
+      borderRadius={10}
+      bg={useColorModeValue('whiteAlpha.800', '#2E2E2E')}
+      _hover={{ bg: useColorModeValue('whiteAlpha.700', '#404040') }}
       columns={[null, null, 2]}
       w="100%"
       gap={6}
@@ -38,7 +39,7 @@ export const GridItemStyle = () => (
   <Global
     styles={`
       .grid-item-thumbnail {
-        border-radius: none;
+        border-radius: 10px;
       }
     `}
   />
