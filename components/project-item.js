@@ -8,17 +8,17 @@ export const ProjectItem = ({ children, title, id, thumbnail }) => (
     <SimpleGrid
       cursor="pointer"
       className="noselect"
-      py={2.5}
-      px={4}
       borderRadius={10}
-      bg={useColorModeValue('whiteAlpha.800', '#2E2E2E')}
-      _hover={{ bg: useColorModeValue('whiteAlpha.700', '#404040') }}
+      boxShadow="0 5px 4px 1px rgba(0, 0, 0, 0.2)"
+      bg={useColorModeValue('whiteAlpha.700', '#2E2E2E')}
+      _hover={{ bg: useColorModeValue('white', '#404040') }}
       columns={[null, null, 2]}
       w="100%"
-      gap={6}
+      py={2}
+      px={2.5}
     >
-      <Box>
-        <Text mb={2} textAlign="start" fontWeight="semibold">
+      <Box letterSpacing={0.95} fontFamily="'Sarabun', sans-serif" p={1}>
+        <Text mb={2} fontWeight="semibold" fontSize={16.5} textAlign="start">
           {title}
         </Text>
         <Text mb={2} textAlign="start" fontSize={15}>

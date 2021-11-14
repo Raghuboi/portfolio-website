@@ -21,6 +21,7 @@ const Portfolio = () => {
         Projects
       </Heading>
       <Alert
+        zIndex={1}
         mb={3}
         py={2}
         borderRadius={20}
@@ -32,15 +33,16 @@ const Portfolio = () => {
         Click on a Project for more information
       </Alert>
       <Layout title="Portfolio">
-        <VStack spacing={3}>
+        <VStack zIndex={0} spacing={3}>
           <Section m={0} delay={0.025}>
             <ProjectItem
               id="portfolio-website"
               title="Portfolio Website"
               thumbnail={portfolioWebsiteThumbnail}
             >
-              This very website. Fully responsive and server-side rendered using
-              Next.js
+              This very website,
+              <br />
+              Fully responsive and server-side rendered using Next.js
             </ProjectItem>
           </Section>
           <Section m={0} delay={0.05}>
@@ -54,8 +56,8 @@ const Portfolio = () => {
           </Section>
           <Section m={0} delay={0.075}>
             <ProjectItem id="snake" title="Snake AI" thumbnail={snakeInGame}>
-              Re-creation of the classic Snake game given an AI with pathfinding
-              algorithms
+              Re-creation of the classic Snake game, given an AI with
+              pathfinding algorithms
             </ProjectItem>
           </Section>
         </VStack>
