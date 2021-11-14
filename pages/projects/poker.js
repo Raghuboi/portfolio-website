@@ -45,17 +45,17 @@ const Project = () => (
             px={4}
             py={1}
             variant={useColorModeValue('solid', 'subtle')}
-            colorScheme={useColorModeValue('red', 'yellow')}
+            colorScheme="purple"
             status="warning"
           >
             <AlertIcon />
-            Note: some browsers may throw an warning while opening the website,
-            because currently it does not have an SSL certificate
+            Some browsers may throw a warning while opening the website because
+            currently it does not have an SSL certificate
           </Alert>
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>
-          <Link isExternal href="http://www.raghu-poker-game.netlify.app/">
+          <Link isExternal href="https://www.raghu-poker-game.netlify.app/">
             http://www.raghu-poker-game.netlify.app/{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
