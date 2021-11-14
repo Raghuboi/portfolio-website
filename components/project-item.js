@@ -9,9 +9,13 @@ export const ProjectItem = ({ children, title, id, thumbnail }) => (
       cursor="pointer"
       className="noselect"
       borderRadius={10}
-      boxShadow="0 5px 4px 1px rgba(0, 0, 0, 0.2)"
-      bg={useColorModeValue('whiteAlpha.700', '#2E2E2E')}
-      _hover={{ bg: useColorModeValue('white', '#404040') }}
+      boxShadow="0 4px 4px 1px rgba(0, 0, 0, 0.1)"
+      transition="transform 80ms ease"
+      bg={useColorModeValue('white', '#2E2E2E')}
+      _hover={{
+        bg: useColorModeValue('#F8F8F8', '#404040'),
+        transform: 'scale(1.025)'
+      }}
       columns={[null, null, 2]}
       w="100%"
       py={2}
