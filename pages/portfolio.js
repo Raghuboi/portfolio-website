@@ -21,7 +21,6 @@ const Portfolio = () => {
         Projects
       </Heading>
       <Alert
-        zIndex={1}
         mb={3}
         py={2}
         borderRadius={20}
@@ -33,7 +32,7 @@ const Portfolio = () => {
         Click on a Project for more information
       </Alert>
       <Layout title="Portfolio">
-        <VStack zIndex={0} spacing={3}>
+        <VStack spacing={3}>
           <Section m={0} delay={0.025}>
             <ProjectItem
               id="portfolio-website"
