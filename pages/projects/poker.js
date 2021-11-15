@@ -4,10 +4,7 @@ import {
   Link,
   List,
   UnorderedList,
-  ListItem,
-  Alert,
-  AlertIcon,
-  useColorModeValue
+  ListItem
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'
@@ -38,25 +35,9 @@ const Project = () => (
           </span>
         </ListItem>
         <ListItem>
-          <Alert
-            borderRadius={6}
-            fontSize={16}
-            mb={3}
-            px={4}
-            py={1}
-            variant={useColorModeValue('solid', 'subtle')}
-            colorScheme="purple"
-            status="warning"
-          >
-            <AlertIcon />
-            Some browsers may throw a warning while opening the website because
-            currently it does not have an SSL certificate
-          </Alert>
-        </ListItem>
-        <ListItem>
           <Meta>Website</Meta>
           <Link isExternal href="https://www.raghu-poker-game.netlify.app/">
-            http://www.raghu-poker-game.netlify.app/{' '}
+            https://www.raghu-poker-game.netlify.app/{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

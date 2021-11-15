@@ -1,9 +1,23 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  Text,
+  SimpleGrid,
+  Badge,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-export const ProjectItem = ({ children, title, id, thumbnail }) => (
+export const ProjectItem = ({
+  children,
+  title,
+  id,
+  thumbnail,
+  badge,
+  badgeColor
+}) => (
   <NextLink href={`/projects/${id}`}>
     <SimpleGrid
       cursor="pointer"
@@ -22,9 +36,25 @@ export const ProjectItem = ({ children, title, id, thumbnail }) => (
       px={2.5}
     >
       <Box letterSpacing={0.95} fontFamily="'Sarabun', sans-serif" p={1}>
-        <Text mb={2} fontWeight="semibold" fontSize={16.5} textAlign="start">
-          {title}
-        </Text>
+        <Flex mb={2} justify="start" align="center">
+          <Text fontWeight="semibold" fontSize={16.5} textAlign="start">
+            {title}
+          </Text>
+          {badge && (
+            <Badge
+              variant={useColorModeValue('solid', 'subtle')}
+              colorScheme={badgeColor}
+              fontFamily="'Source Sans Pro', sans-serif"
+              fontSize={12.5}
+              borderRadius={12.5}
+              px={1.5}
+              py={0.5}
+              ml={2}
+            >
+              {badge}
+            </Badge>
+          )}
+        </Flex>
         <Text mb={2} textAlign="start" fontSize={15}>
           {children}
         </Text>

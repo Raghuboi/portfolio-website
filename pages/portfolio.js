@@ -12,7 +12,9 @@ import Section from '../components/section'
 
 import pokerInGame from '../public/images/portfolio/poker-in-game.png'
 import snakeInGame from '../public/images/portfolio/snake-in-game.png'
-import portfolioWebsiteThumbnail from '../public/images/portfolio/portfolio-website-thumbnail.png'
+import codeForceLogo from '../public/images/portfolio/code-force-logo.png'
+import portfolioWebsiteThumbnailDark from '../public/images/portfolio/portfolio-website-thumbnail.png'
+import portfolioWebsiteThumbnailLight from '../public/images/portfolio/portfolio-website-light.png'
 
 const Portfolio = () => {
   return (
@@ -35,16 +37,30 @@ const Portfolio = () => {
         <VStack spacing={3}>
           <Section m={0} delay={0.025}>
             <ProjectItem
+              id="student-net"
+              title="Student Net"
+              badge="OPEN SOURCE"
+              badgeColor="green"
+              thumbnail={codeForceLogo}
+            >
+              One spot for all University of Winnipeg student information
+            </ProjectItem>
+          </Section>
+          <Section m={0} delay={0.05}>
+            <ProjectItem
               id="portfolio-website"
               title="Portfolio Website"
-              thumbnail={portfolioWebsiteThumbnail}
+              thumbnail={useColorModeValue(
+                portfolioWebsiteThumbnailDark,
+                portfolioWebsiteThumbnailLight
+              )}
             >
               This very website,
               <br />
               Fully responsive and server-side rendered using Next.js
             </ProjectItem>
           </Section>
-          <Section m={0} delay={0.05}>
+          <Section m={0} delay={0.075}>
             <ProjectItem
               id="poker"
               title="Multiplayer Poker Game"
@@ -53,7 +69,7 @@ const Portfolio = () => {
               WebSocket based Poker with User Authentication
             </ProjectItem>
           </Section>
-          <Section m={0} delay={0.075}>
+          <Section m={0} delay={0.01}>
             <ProjectItem id="snake" title="Snake AI" thumbnail={snakeInGame}>
               Re-creation of the classic Snake game, given an AI with
               pathfinding algorithms
