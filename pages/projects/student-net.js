@@ -122,8 +122,8 @@ const Project = () => {
           <ListItem>Find used cars for travel.</ListItem>
           <ListItem>
             Stuff for international students - Information page for how to
-            prepare and get a driver's license, apply for work permit, extend
-            permits, etc.
+            prepare and get a driver&apos;s license, apply for work permit,
+            extend permits, etc.
           </ListItem>
         </UnorderedList>
 

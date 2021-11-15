@@ -42,7 +42,7 @@ export const ProjectItem = ({
           </Text>
           {badge && (
             <Badge
-              variant={useColorModeValue('solid', 'subtle')}
+              variant={useColorModeValue('solid', 'subtle')} //eslint-disable-line
               colorScheme={badgeColor}
               fontFamily="'Source Sans Pro', sans-serif"
               fontSize={12.5}
