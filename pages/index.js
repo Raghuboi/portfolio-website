@@ -40,7 +40,6 @@ const Page = () => {
             isExternal
             display="inline"
             fontWeight="semibold"
-            color={useColorModeValue('purple.500', 'purple.200')}
           >
             University Of Winnipeg
             <ExternalLinkIcon mx="2px" />
