@@ -61,7 +61,7 @@ const Project = () => {
               </Badge>{' '}
               <Badge variant="solid" colorScheme="green">
                 NodeJS
-              </Badge>{' '}
+              </Badge>
             </span>
           </ListItem>
           <ListItem>
@@ -103,11 +103,10 @@ const Project = () => {
         </List>
         <UnorderedList ml={4} my={4}>
           <ListItem>
-            Find Job opportunities from various sources. These will include only
-            part time jobs for students
+            Find student-suitable Job opportunities from various sources
           </ListItem>
           <ListItem>
-            A Q&amp;A section where students can help other students
+            A Q&amp;A section where students can help each other
           </ListItem>
           <ListItem>
             One stop place to search for a course, and get all universities that
@@ -121,9 +120,9 @@ const Project = () => {
           <ListItem>A housing page to look for a student roommate</ListItem>
           <ListItem>Find used cars for travel.</ListItem>
           <ListItem>
-            Stuff for international students - Information page for how to
-            prepare and get a driver&apos;s license, apply for work permit,
-            extend permits, etc.
+            Information for international students - page for how to prepare and
+            get a driver&apos;s license, apply for work permit, extend permits,
+            etc.
           </ListItem>
         </UnorderedList>
 
@@ -141,7 +140,7 @@ const Project = () => {
           <UnorderedList ml={4} mb={4}>
             <ListItem>
               Active role as Project Assistant
-              <UnorderedList variant="" spacing={1} mb={3} ml={8}>
+              <UnorderedList spacing={1} mb={3} ml={8}>
                 <ListItem>
                   Participate in weekly Agile like standup meetings with Project
                   Leaders
@@ -150,7 +149,7 @@ const Project = () => {
                   Go over current state of Kanban board, sort issues by priority
                 </ListItem>
                 <ListItem>
-                  Discuss iterations, come up with new issues for biweekly
+                  Discuss iterations; come up with new issues for biweekly
                   sprints
                 </ListItem>
               </UnorderedList>
