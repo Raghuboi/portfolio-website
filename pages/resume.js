@@ -20,7 +20,7 @@ import {
   Spacer
 } from '@chakra-ui/react'
 import Section from '../components/section'
-import { DownloadIcon, AtSignIcon, ExternalLinkIcon } from '@chakra-ui/icons'
+import { DownloadIcon, EmailIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Resume = () => {
   return (
@@ -53,10 +53,8 @@ const Resume = () => {
               Raghunath Prabhakar
             </Heading>
             <Box align="center">
-              <AtSignIcon />
               <Text fontSize={16} fontWeight="semibold" display="inline">
-                {' '}
-                raghunathprabhakar@gmail.com
+                <EmailIcon /> raghunathprabhakar@gmail.com
               </Text>
             </Box>
           </Box>
@@ -339,7 +337,6 @@ const Resume = () => {
               </UnorderedList>
             </Box>
           </Box>
-
         </Flex>
       </Section>
     </Container>
