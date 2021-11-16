@@ -29,7 +29,7 @@ const Resume = () => {
         <Heading as="h3" variant="section-title">
           Resume
         </Heading>
-        <a href="/resume.pdf" download>
+        <a href="/Raghunath Prabhakar - Resume.pdf" download>
           <Button size="md" colorScheme="purple">
             Download PDF
             <DownloadIcon ml={2} />
@@ -97,6 +97,7 @@ const Resume = () => {
 
             <CustomAccordian
               heading="About the Organization"
+              openByDefault={true}
               content={
                 <Text>
                   Initiative started by the students of{' '}
@@ -210,7 +211,7 @@ const Resume = () => {
             <ResumeProject
               href="http://raghunathprabhakar.com/projects/poker"
               title="Multiplayer Poker Game"
-              description="Built a WebSocket based Mutliplayer Poker Game with Token
+              description="Built a WebSocket based Multiplayer Poker Game with Token
                     based authentication using a REST API. The game was created
                     in effort to learn more about WebSockets and working with
                     APIs."
@@ -222,7 +223,7 @@ const Resume = () => {
                     vulnerabilities.
                   </ListItem>
                   <ListItem>
-                    Stored Tokens in Secure, HttpOnly cookies as opposed to
+                    Stored Tokens in Secure, HttpOnly cookies instead of
                     LocalStorage for further protection.
                   </ListItem>
                   <ListItem>
@@ -298,6 +299,47 @@ const Resume = () => {
               }
             />
           </Box>
+
+          <Box>
+            <ResumeHeading title="Volunteer Work" />
+            <Box>
+              <Text fontSize={18} fontWeight={600}>
+                (2008-2019) Bharat Soka Gakai
+              </Text>
+              <Spacer py={1} />
+              <UnorderedList spacing={1} ml={8}>
+                <ListItem>
+                  Actively helped in organizing the SGI May 3rd Anniversary
+                  event every year.
+                </ListItem>
+                <ListItem>
+                  In-charge of a number of tasks including decoration, cultural
+                  performances, seating arrangements and catering. Chandigarh,
+                  India.
+                </ListItem>
+              </UnorderedList>
+            </Box>
+
+            <Spacer py={2} />
+
+            <Box>
+              <Text fontSize={18} fontWeight={600}>
+                (2010-2016) Sri Sathya Sai Seva Organization
+              </Text>
+              <Spacer py={1} />
+              <UnorderedList spacing={1} ml={8}>
+                <ListItem>
+                  Volunteered to teach English and Math to underprivileged
+                  students.
+                </ListItem>
+                <ListItem>
+                  Participated in blanket and food distribution drives during
+                  winters for the homeless in the city of Chandigarh, India.
+                </ListItem>
+              </UnorderedList>
+            </Box>
+          </Box>
+
         </Flex>
       </Section>
     </Container>
