@@ -3,8 +3,11 @@ import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 import {
   Container,
+  Link,
   VStack,
+  Box,
   Heading,
+  Text,
   Textarea,
   Button,
   Spacer,
@@ -15,7 +18,7 @@ import {
   useColorModeValue,
   useToast
 } from '@chakra-ui/react'
-import { CheckIcon } from '@chakra-ui/icons'
+import { CheckIcon, EmailIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Layout from '../components/layouts/projects'
 
@@ -71,11 +74,27 @@ const Contact = () => {
   }
 
   return (
-    <Container className="noselect" pt={6}>
-      <Heading as="h3" variant="section-title" mb={6}>
-        Contact Me
+    <Container pt={6}>
+      <Heading as="h3" variant="section-title">
+        Contact Me Directly
       </Heading>
+      <Link isExternal href="mailto:raghunathprabhakar@gmail.com">
+        <Box justify="center" my={3}>
+          <EmailIcon />
+          <Text fontSize={16} fontWeight="semibold" display="inline">
+            {' '}
+            raghunathprabhakar@gmail.com
+          </Text>
+          <ExternalLinkIcon mx={1} />
+        </Box>
+      </Link>
+
+      <Spacer py={0.5} />
+
       <Layout title="Contact">
+        <Heading as="h3" variant="section-title">
+          or Send a Message
+        </Heading>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
