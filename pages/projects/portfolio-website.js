@@ -36,8 +36,8 @@ const Project = () => (
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>
-          <Link isExternal href="http://raghunathprabhakar.com/">
-            http://raghunathprabhakar.com/ <ExternalLinkIcon mx="2px" />
+          <Link isExternal href="https://raghunathprabhakar.com/">
+            https://raghunathprabhakar.com/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>

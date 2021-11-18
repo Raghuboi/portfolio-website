@@ -36,8 +36,8 @@ const Project = () => (
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>
-          <Link isExternal href="https://www.raghu-poker-game.netlify.app/">
-            https://www.raghu-poker-game.netlify.app/{' '}
+          <Link isExternal href="https://raghu-poker-game.netlify.app/">
+            https://raghu-poker-game.netlify.app/{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
