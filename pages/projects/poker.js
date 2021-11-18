@@ -53,27 +53,28 @@ const Project = () => (
         </ListItem>
       </List>
       <UnorderedList ml={4} my={4}>
-        <ListItem>Socket.io is used to provide WebSocket support</ListItem>
         <ListItem>
-          Users can play with each other using Room Codes or choose to queue up
-          for automatic Matchmaking
+          Implemented JWT authentication with Refresh/Access token patterns to
+          protect against XSS (cross-site scripting) vulnerabilities.
         </ListItem>
         <ListItem>
-          Although the game does not need a database, we have implemented user
-          authentication using a REST API that requires us to store data.
+          Stored Tokens in Secure, HttpOnly cookies instead of LocalStorage for
+          further protection.
         </ListItem>
         <ListItem>
-          Uses JWT authentication patterns, implemented Refresh Tokens and
-          Access Tokens to protect against XSS attacks. Tokens are stored in
-          Secure, HttpOnly Cookies as opposed to LocalStorage for further
-          protection
+          Created REST API endpoints for Sign In/Sign Up that validate and store
+          data in a MongoDB database.
         </ListItem>
         <ListItem>
-          Passwords are hashed using the library bcrypt before saving
+          Added hashing to user passwords before saving them in the database.
         </ListItem>
         <ListItem>
-          A confirmation email (using nodemailer) is sent to users before
-          activating their account
+          Implemented logic for sending out confirmation emails to users,
+          requiring them to activate their account before signing in.
+        </ListItem>
+        <ListItem>
+          Implemented Room-code matchmaking and automatic Queue based
+          matchmaking using WebSockets.
         </ListItem>
       </UnorderedList>
 
