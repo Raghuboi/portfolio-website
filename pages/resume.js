@@ -19,7 +19,7 @@ import {
   Badge,
   Spacer
 } from '@chakra-ui/react'
-import Section from '../components/section'
+import Layout from '../components/layouts/projects'
 import { DownloadIcon, EmailIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Resume = () => {
@@ -36,7 +36,7 @@ const Resume = () => {
           </Button>
         </a>
       </Flex>
-      <Section>
+      <Layout title="Resume">
         <Flex
           fontWeight={400}
           flexDir="column"
@@ -338,7 +338,7 @@ const Resume = () => {
             </Box>
           </Box>
         </Flex>
-      </Section>
+      </Layout>
     </Container>
   )
 }
