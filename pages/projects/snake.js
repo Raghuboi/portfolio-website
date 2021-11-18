@@ -47,19 +47,15 @@ const Project = () => (
       </List>
       <UnorderedList ml={4} my={4}>
         <ListItem>
-          Game can be played manually with a keyboard/touchscreen or
-          automatically by showcasing the algorithms
+          Made the game responsive, enabling it to be played by swiping on a
+          touchscreen or using arrowkeys on a keyboard.
         </ListItem>
         <ListItem>
-          Implemented A* and Greedy best-first search algorithms
+          Implemented A-Star and Greedy best first search algorithms.
         </ListItem>
         <ListItem>
-          React swipable is used to provide touchscreen support for playing on
-          mobile
-        </ListItem>
-        <ListItem>Game is rendered in an HTML canvas using React</ListItem>
-        <ListItem>
-          A custom UseInterval() React hook is used to time the gameloop
+          Used a custom UseInterval() React hook to time the gameloop, set up
+          the game to be rendered in an HTML canvas using React.
         </ListItem>
       </UnorderedList>
 

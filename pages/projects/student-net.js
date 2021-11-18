@@ -139,18 +139,28 @@ const Project = () => {
           </Heading>
           <UnorderedList ml={4} mb={4}>
             <ListItem>
-              Active role as Project Assistant
-              <UnorderedList spacing={1} mb={3} ml={8}>
+              <Text fontWeight="semibold">
+                Active leadership role as Project Assistant.
+              </Text>
+              <UnorderedList spacing={1} ml={8}>
                 <ListItem>
-                  Participate in weekly Agile like standup meetings with Project
-                  Leaders
+                  Kept track of current/planned issues for my team in biweekly
+                  Agile sprints.
                 </ListItem>
                 <ListItem>
-                  Go over current state of Kanban board, sort issues by priority
+                  Reviewed code for junior peers/team members.
                 </ListItem>
                 <ListItem>
-                  Discuss iterations; come up with new issues for biweekly
-                  sprints
+                  Participated in weekly Agile like standup meetings with
+                  Project Leaders.
+                </ListItem>
+                <ListItem>
+                  Discussed weekly state of Kanban board in standup; gave
+                  suggestions &amp; helped sort issues by priority.
+                </ListItem>
+                <ListItem>
+                  Discussed iterations; suggested &amp; gave feedback on new
+                  issues for biweekly sprints.
                 </ListItem>
               </UnorderedList>
             </ListItem>
