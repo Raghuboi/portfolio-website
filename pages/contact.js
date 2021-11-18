@@ -76,7 +76,7 @@ const Contact = () => {
   return (
     <Container pt={6}>
       <Heading as="h3" variant="section-title">
-        Contact Me Directly
+        Connect
       </Heading>
       <Link isExternal href="mailto:raghunathprabhakar@gmail.com">
         <Box justify="center" my={3}>
@@ -93,7 +93,7 @@ const Contact = () => {
 
       <Layout title="Contact">
         <Heading as="h3" variant="section-title">
-          or Send a Message
+          Send a Message
         </Heading>
         <Formik
           initialValues={initialValues}
