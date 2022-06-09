@@ -21,7 +21,6 @@ const Page = () => {
         <Heading as="h2" variant="page-title">
           Raghunath Prabhakar
         </Heading>
-        <p>Developer, Designer</p>
       </Box>
 
       <Spacer p="0.5rem" />
@@ -31,10 +30,11 @@ const Page = () => {
           About
         </Heading>
         <Paragraph>
-          I am a Full-stack developer based in Winnipeg, Manitoba
+          I am a Full-stack developer based in Winnipeg, Manitoba.
           <br />
           <br />
-          Having majored in Applied Computer Science (B.Sc) from the{' '}
+          Having double majored in Applied Computer Science (B.Sc) and Economics
+          (B.A.) from the{' '}
           <Link
             href="https://www.uwinnipeg.ca/"
             isExternal
@@ -44,13 +44,13 @@ const Page = () => {
             University Of Winnipeg
             <ExternalLinkIcon mx="2px" />
           </Link>
-          , I am also avidly interested in Security, User Authentication, UI/UX
+          , I am also avidly interested in Security, User Authentication, UI
           design and working with REST APIs. You can see me implementing a mix
-          of these throughout my projects
+          of these throughout my projects.
           <br />
           <br />
           Fascinated by Agile principles and values, I am also pursuing a Google
-          Careers Certification in Project Management
+          Careers Certification in Project Management.
         </Paragraph>
         <HStack justify="center" spacing={4} my={4}>
           <NextLink href="/portfolio">
