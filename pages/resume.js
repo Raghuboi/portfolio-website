@@ -73,9 +73,9 @@ const Resume = () => {
               </Text>
               <br />
               <Text ml={6} fontWeight={500} display="inline">
-                Minor -{' '}
+                B.A. -{' '}
               </Text>
-              <Text display="inline">Economics</Text>
+              <Text display="inline">Economics (In progress)</Text>
               <br />
               <Text fontSize={17} fontWeight={600} display="inline">
                 Google Careers Certification -{' '}
@@ -86,70 +86,135 @@ const Resume = () => {
 
           <Box>
             <ResumeHeading title="Experience" />
-            <Text fontSize={18} fontWeight={600}>
-              Project Assistant - UW Code Force (2021 - Current)
-            </Text>
-            <Link isExternal href="https://uwcodeforce.ca/">
-              https://uwcodeforce.ca/ <ExternalLinkIcon mx="2px" />
-            </Link>
+            <Box>
+              <Text fontSize={18} fontWeight={600}>
+                Backend Developer - Wavelength Digital (2021 - Current)
+              </Text>
 
-            <CustomAccordian
-              heading="About the Organization"
-              openByDefault={true}
-              content={
-                <Text>
-                  Initiative started by the students of{' '}
+              <CustomAccordian
+                heading="About the Organization"
+                openByDefault={true}
+                content={
+                  <Text>
+                    A small-scale news application startup in collaboration with
+                    University of Calgary students. Wavelength was also selected
+                    in UCalgary&apos;s 2021{' '}
+                    <Link
+                      display="inline"
+                      isExternal
+                      href="https://www.ucalgary.ca/hunter-hub/grow-your-idea/entrepreneurship-programs/launchpad"
+                    >
+                      Launchpad Program
+                      <ExternalLinkIcon mx="2px" />
+                    </Link>{' '}
+                    and is receiving funding from the University.
+                  </Text>
+                }
+              ></CustomAccordian>
+
+              <UnorderedList ml={4} my={4}>
+                <ListItem>
+                  Conducted{' '}
                   <Link
-                    href="https://www.uwinnipeg.ca/"
-                    isExternal
                     display="inline"
-                    fontWeight="semibold"
+                    isExternal
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeqihEmmhO0eWqd6vz8b99jr-Sbr9F_gD6I4H_PJmVLHnOQ9Q/viewform"
                   >
-                    University Of Winnipeg
+                    surveys
                     <ExternalLinkIcon mx="2px" />
                   </Link>{' '}
-                  to bridge the gap between education and the work-force.{' '}
-                  <Text fontWeight={650} fontSize={16} display="inline">
-                    Organizing coding competitions and open source projects
-                  </Text>{' '}
-                  throughout the academic year; and helping students learn
-                  valuable industry skills such as working in a team, advanced
-                  problem solving, collaboration with git (and other build
-                  tools) &amp; app deployment.
-                </Text>
-              }
-            ></CustomAccordian>
+                  to better understand user needs.
+                </ListItem>
+                <ListItem>
+                  Created Sign In/Sign Up pages in React Native with stateful
+                  form validation, and user authentication using Firebase.
+                </ListItem>
+                <ListItem>
+                  Worked in a team to create app prototypes using Adobe XD and
+                  Canva.
+                </ListItem>
+                <ListItem>
+                  Created an initial website-map and landing page design.
+                </ListItem>
+                <ListItem>
+                  Lead a team of junior students and taught them the
+                  fundamentals of collaboration using Git.
+                </ListItem>
+                <ListItem>
+                  Worked in a team to create a dashboard to keep track of
+                  analytics and user data.
+                </ListItem>
+              </UnorderedList>
+            </Box>
 
-            <Spacer py={1} />
+            <Spacer py={2} />
 
-            <UnorderedList ml={4}>
-              <ListItem>
-                <Text fontWeight="semibold">
-                  Active leadership role as Project Assistant.
-                </Text>
-                <UnorderedList spacing={1} ml={8}>
-                  <ListItem>
-                    Kept track of current/planned issues for my team in biweekly
-                    Agile sprints.
-                  </ListItem>
-                  <ListItem>
-                    Reviewed code for junior peers/team members.
-                  </ListItem>
-                  <ListItem>
-                    Participated in weekly Agile like standup meetings with
-                    Project Leaders.
-                  </ListItem>
-                  <ListItem>
-                    Discussed weekly state of Kanban board in standup; gave
-                    suggestions &amp; helped sort issues by priority.
-                  </ListItem>
-                  <ListItem>
-                    Discussed iterations; suggested &amp; gave feedback on new
-                    issues for biweekly sprints.
-                  </ListItem>
-                </UnorderedList>
-              </ListItem>
-            </UnorderedList>
+            <Box>
+              <Text fontSize={18} fontWeight={600}>
+                Project Assistant - UW Code Force (2021 - Current)
+              </Text>
+              <Link isExternal href="https://uwcodeforce.ca/">
+                https://uwcodeforce.ca/ <ExternalLinkIcon mx="2px" />
+              </Link>
+
+              <CustomAccordian
+                heading="About the Organization"
+                openByDefault={true}
+                content={
+                  <Text>
+                    Initiative started by the students of{' '}
+                    <Link
+                      href="https://www.uwinnipeg.ca/"
+                      isExternal
+                      display="inline"
+                      fontWeight="semibold"
+                    >
+                      University Of Winnipeg
+                      <ExternalLinkIcon mx="2px" />
+                    </Link>{' '}
+                    to bridge the gap between education and the work-force.{' '}
+                    <Text fontWeight={650} fontSize={16} display="inline">
+                      Organizing coding competitions and open source projects
+                    </Text>{' '}
+                    throughout the academic year; and helping students learn
+                    valuable industry skills such as working in a team, advanced
+                    problem solving, collaboration with git (and other build
+                    tools) &amp; app deployment.
+                  </Text>
+                }
+              ></CustomAccordian>
+
+              <Spacer py={1} />
+
+              <UnorderedList ml={4}>
+                <ListItem>
+                  <Text fontWeight="semibold">
+                    Active leadership role as Project Assistant.
+                  </Text>
+                  <UnorderedList spacing={1} ml={8}>
+                    <ListItem>
+                      Kept track of current/planned issues for my team in
+                      biweekly Agile sprints.
+                    </ListItem>
+                    <ListItem>
+                      Reviewed code for junior peers/team members.
+                    </ListItem>
+                    <ListItem>
+                      Participated in weekly Agile like standup meetings with
+                      Project Leaders.
+                    </ListItem>
+                    <ListItem>
+                      Discussed weekly state of Kanban board in standup; gave
+                      suggestions &amp; helped sort issues by priority.
+                    </ListItem>
+                    <ListItem>
+                      Discussed iterations; suggested &amp; gave feedback on new
+                      issues for biweekly sprints.
+                    </ListItem>
+                  </UnorderedList>
+                </ListItem>
+              </UnorderedList>
+            </Box>
           </Box>
 
           <Box>
@@ -300,6 +365,25 @@ const Resume = () => {
 
           <Box>
             <ResumeHeading title="Volunteer Work" />
+            <Box>
+              <Text fontSize={18} fontWeight={600}>
+                (2021-2022) Save the Children &amp; Plan Canada
+              </Text>
+              <Spacer py={1} />
+              <UnorderedList spacing={1} ml={8}>
+                <ListItem>
+                  Worked as a door-to-door fundraiser for the charities Save the
+                  Children and Plan Canada.
+                </ListItem>
+                <ListItem>
+                  Spread awareness about the charities in residential
+                  neighborhoods, talked to 50+ people every day.
+                </ListItem>
+              </UnorderedList>
+            </Box>
+
+            <Spacer py={2} />
+
             <Box>
               <Text fontSize={18} fontWeight={600}>
                 (2008-2019) Bharat Soka Gakai
