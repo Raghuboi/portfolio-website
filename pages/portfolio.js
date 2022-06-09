@@ -15,6 +15,7 @@ import snakeInGame from '../public/images/portfolio/snake-in-game.png'
 import codeForceLogo from '../public/images/portfolio/code-force-logo.png'
 import portfolioWebsiteThumbnailDark from '../public/images/portfolio/portfolio-website-thumbnail.png'
 import portfolioWebsiteThumbnailLight from '../public/images/portfolio/portfolio-website-light.png'
+import wavelengthLogo from '../public/images/portfolio/wavelength-logo.png'
 
 const Portfolio = () => {
   return (
@@ -37,6 +38,18 @@ const Portfolio = () => {
         <VStack spacing={3}>
           <Section m={0} delay={0.025}>
             <ProjectItem
+              id="wavelength"
+              title="Wavelength"
+              badge="GROUP"
+              badgeColor="purple"
+              thumbnail={wavelengthLogo}
+            >
+              A News Application Startup part of University of Calgary&apos;s
+              Launchpad Program (2021).
+            </ProjectItem>
+          </Section>
+          <Section m={0} delay={0.05}>
+            <ProjectItem
               id="student-net"
               title="Student Net"
               badge="OPEN SOURCE"
@@ -46,7 +59,16 @@ const Portfolio = () => {
               One spot for all University of Winnipeg student information
             </ProjectItem>
           </Section>
-          <Section m={0} delay={0.05}>
+          <Section m={0} delay={0.075}>
+            <ProjectItem
+              id="poker"
+              title="Multiplayer Poker Game"
+              thumbnail={pokerInGame}
+            >
+              WebSocket based Poker with User Authentication
+            </ProjectItem>
+          </Section>
+          <Section m={0} delay={0.1}>
             <ProjectItem
               id="portfolio-website"
               title="Portfolio Website"
@@ -60,16 +82,8 @@ const Portfolio = () => {
               Fully responsive and server-side rendered using Next.js
             </ProjectItem>
           </Section>
-          <Section m={0} delay={0.075}>
-            <ProjectItem
-              id="poker"
-              title="Multiplayer Poker Game"
-              thumbnail={pokerInGame}
-            >
-              WebSocket based Poker with User Authentication
-            </ProjectItem>
-          </Section>
-          <Section m={0} delay={0.01}>
+
+          <Section m={0} delay={0.125}>
             <ProjectItem id="snake" title="Snake AI" thumbnail={snakeInGame}>
               Re-creation of the classic Snake game, given an AI with
               pathfinding algorithms
