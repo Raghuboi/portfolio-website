@@ -6,7 +6,9 @@ import {
   Heading,
   Link,
   Spacer,
-  useColorModeValue
+  useColorModeValue,
+  Alert,
+  Text
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
@@ -26,15 +28,32 @@ const Page = () => {
       <Spacer p="0.5rem" />
 
       <Section>
+        <Alert
+          borderRadius={15}
+          fontSize={16}
+          mb={3}
+          px={4}
+          py={1}
+          variant={useColorModeValue('solid', 'subtle')}
+          colorScheme="purple"
+          status="warning"
+        >
+          <Text as="i">
+            “The illiterate of the 21st century will not be those who cannot
+            read and write, but those who cannot learn, unlearn, and relearn.” ―
+            Alvin Toffler
+          </Text>
+        </Alert>
         <Heading as="h3" variant="section-title">
-          About
+          Bio
         </Heading>
         <Paragraph>
-          I am a Full-stack developer based in Winnipeg, Manitoba.
+          I am a Full-stack developer based in Winnipeg, Manitoba with a passion
+          for Economics and Finance.
           <br />
           <br />
-          Having double majored in Applied Computer Science (B.Sc) and Economics
-          (B.A.) from the{' '}
+          Double degree, B.Sc. Applied Computer Science and B.A. Economics from
+          the{' '}
           <Link
             href="https://www.uwinnipeg.ca/"
             isExternal
@@ -44,15 +63,25 @@ const Page = () => {
             University Of Winnipeg
             <ExternalLinkIcon mx="2px" />
           </Link>
-          , I am also avidly interested in Security, User Authentication, UI
-          design and working with REST APIs. You can see me implementing a mix
-          of these throughout my projects.
-          <br />
-          <br />
-          Fascinated by Agile principles and values, I am also pursuing a Google
-          Careers Certification in Project Management.
+          . I am interested in security, UI/UX, OO design patterns, cloud
+          computing, and computer networks. Firm believer in Agile principles
+          and values.
         </Paragraph>
-        <HStack justify="center" spacing={4} my={4}>
+        <Heading mt={6} as="h3" variant="section-title">
+          About
+        </Heading>
+        <Paragraph>
+          I am learning to be humble in an industry dominated by ego; to be
+          quiet even when noise sells. I am the person you can never quite
+          figure out— someone who always has something more to say, something
+          more to think. I am always thinking, always questioning, and always
+          learning.
+          <br />
+          <br />I would like to work in places where I am the small fish in a
+          big pond. Would, eventually, like to have a career in Project
+          Management.
+        </Paragraph>
+        <HStack justify="center" spacing={4} my={7}>
           <NextLink href="/portfolio">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               My portfolio
