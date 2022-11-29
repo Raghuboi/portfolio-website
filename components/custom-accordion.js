@@ -68,11 +68,14 @@ export const CustomAccordianHomeTitle = ({
 
   useEffect(() => {
     if (isOpen) {
-      contentRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-        inline: 'center'
-      })
+      setTimeout(() => {
+        contentRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'center'
+        })
+      }, 200) // timeout is needed to trigger animation
+      // possibly something to do with the page not being scrollable until after the accordion expands
     }
   }, [isOpen])
 
