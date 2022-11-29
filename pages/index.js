@@ -108,7 +108,7 @@ const Page = () => {
           learning."
         />
 
-        <HStack ref={ButtonDiv} justify="center" spacing={4} my={7}>
+        <HStack ref={ButtonDiv} justify="center" spacing={4} my={4}>
           <NextLink href="/portfolio">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               My portfolio

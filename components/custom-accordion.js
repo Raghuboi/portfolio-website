@@ -92,7 +92,6 @@ export const CustomAccordianHomeTitle = ({
         <AccordionPanel
           bg={useColorModeValue('#F8F8F8', 'whiteAlpha.100')}
           boxShadow="0 2px 3px 1px rgba(0, 0, 0, 0.2)"
-          my={2}
           px={4}
           py={3}
           borderRadius={20}
