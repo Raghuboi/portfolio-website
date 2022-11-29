@@ -86,7 +86,6 @@ const Page = () => {
         </Paragraph>
 
         <CustomAccordianHomeTitle
-          openByDefault={false}
           heading={
             <Heading
               mt={6}
