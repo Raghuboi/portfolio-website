@@ -25,7 +25,7 @@ const Page = () => {
     setTimeout(() => {
       ButtonDiv.current.scrollIntoView({
         behavior: 'smooth',
-        block: 'end',
+        block: 'center',
         inline: 'end'
       })
     }, 500) // framer motion animations execute before page is scrolled into view
@@ -86,6 +86,7 @@ const Page = () => {
         </Paragraph>
 
         <CustomAccordianHomeTitle
+          openByDefault={false}
           heading={
             <Heading
               mt={6}
@@ -108,7 +109,7 @@ const Page = () => {
           learning."
         />
 
-        <HStack ref={ButtonDiv} justify="center" spacing={4} my={4}>
+        <HStack ref={ButtonDiv} justify="center" spacing={4} my={3.5}>
           <NextLink href="/portfolio">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               My portfolio
