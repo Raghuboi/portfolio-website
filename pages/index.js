@@ -16,8 +16,21 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
 import { CustomAccordianHomeTitle } from '../components/custom-accordion'
+import { useRef, useEffect } from 'react'
 
 const Page = () => {
+  const ButtonDiv = useRef()
+
+  useEffect(() => {
+    setTimeout(() => {
+      ButtonDiv.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: 'end'
+      })
+    }, 500) // framer motion animations execute before page is scrolled into view
+  }, [])
+
   return (
     <Container pt={6}>
       <Box display={{ md: 'flex-grow' }}>
@@ -96,7 +109,7 @@ const Page = () => {
           learning."
         />
 
-        <HStack justify="center" spacing={4} my={7}>
+        <HStack ref={ButtonDiv} justify="center" spacing={4} my={7}>
           <NextLink href="/portfolio">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
               My portfolio
