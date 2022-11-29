@@ -15,6 +15,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
+import { CustomAccordianHomeTitle } from '../components/custom-accordion'
 
 const Page = () => {
   return (
@@ -66,21 +67,35 @@ const Page = () => {
           . I am interested in security, UI/UX, OO design patterns, cloud
           computing, and computer networks. Firm believer in Agile principles
           and values.
-        </Paragraph>
-        <Heading mt={6} as="h3" variant="section-title">
-          About
-        </Heading>
-        <Paragraph>
-          I am learning to be humble in an industry dominated by ego; to be
-          quiet even when noise sells. I am the person you can never quite
-          figure out— someone who always has something more to say, something
-          more to think. I am always thinking, always questioning, and always
-          learning.
           <br />
           <br />I would like to work in places where I am the small fish in a
           big pond. Would, eventually, like to have a career in Project
           Management.
         </Paragraph>
+
+        <CustomAccordianHomeTitle
+          heading={
+            <Heading
+              mt={6}
+              as="h3"
+              variant="section-title"
+              _hover={{
+                textDecorationColor: useColorModeValue(
+                  'purple.500',
+                  'purple.200'
+                )
+              }}
+            >
+              About Me
+            </Heading>
+          }
+          content="I am learning to be humble in an industry dominated by noise; to be
+          calm when everyone's excited. I am the person you can never quite
+          figure out— someone who always has something more to say, something
+          more to add. I am always thinking, always questioning, and always
+          learning."
+        />
+
         <HStack justify="center" spacing={4} my={7}>
           <NextLink href="/portfolio">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
