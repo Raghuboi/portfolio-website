@@ -81,9 +81,8 @@ const Page = () => {
           computing, and computer networks. Firm believer in Agile principles
           and values.
           <br />
-          <br />I would like to work in places where I am the small fish in a
-          big pond. Would, eventually, like to have a career in Project
-          Management.
+          <br />I want to work in places where I am the small fish in a big
+          pond. Would, eventually, like to have a career in Project Management.
         </Paragraph>
 
         <CustomAccordianHomeTitle
@@ -105,7 +104,7 @@ const Page = () => {
           content="I am learning to be humble in an industry dominated by noise; to be
           calm when everyone's excited. I am the person you can never quite
           figure out— someone who always has something more to say, something
-          more to add. I am always thinking, always questioning, and always
+          more to add. I am always thinking, constantly questioning, and forever
           learning."
         />
 
