@@ -40,12 +40,11 @@ const Portfolio = () => {
             <ProjectItem
               id="wavelength"
               title="Wavelength"
-              badge="GROUP"
+              badge="STARTUP"
               badgeColor="purple"
               thumbnail={wavelengthLogo}
             >
-              A News Application Startup part of University of Calgary&apos;s
-              Launchpad Program (2021).
+              A News app for Android and iOS
             </ProjectItem>
           </Section>
           <Section m={0} delay={0.05}>

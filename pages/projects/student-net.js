@@ -179,10 +179,6 @@ const Project = () => {
           </UnorderedList>
         </Box>
         <ProjectImage
-          src="/images/portfolio/student-net-commits.png"
-          alt="Student Net- My Commits"
-        />
-        <ProjectImage
           src="/images/portfolio/student-net-sign-in.png"
           alt="Student Net Sign In"
         />
