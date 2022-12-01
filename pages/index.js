@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Container,
   Box,
@@ -108,41 +109,41 @@ const Page = () => {
           more to add. I am always thinking, constantly questioning, and forever
           learning."
         />
-        <Wrap ref={ButtonDiv} justify="center" spacing={4} my={3.5}>
-          <MediaButtons />
-        </Wrap>
+        <MediaButtons ref={ButtonDiv} />
       </Section>
     </Container>
   )
 }
 
-const MediaButtons = () => {
+const MediaButtons = React.forwardRef((props, ref) => {
   return (
     <>
-      <NextLink href="/portfolio">
-        <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
-          My portfolio
-        </Button>
-      </NextLink>
-      <a href="https://github.com/Raghuboi" target="_blank" rel="noreferrer">
-        <Button
-          leftIcon={<IoLogoGithub />}
-          bg={useColorModeValue('#2E2E2E', 'whiteAlpha.200')}
-          _hover={{
-            bg: useColorModeValue('#000000', '#454545')
-          }}
-          color="white"
-        >
-          GitHub
-        </Button>
-      </a>
-      <a href="https://github.com/Raghuboi" target="_blank" rel="noreferrer">
-        <Button leftIcon={<IoLogoLinkedin />} colorScheme="facebook">
-          LinkedIn
-        </Button>
-      </a>
+      <Wrap ref={ref} justify="center" spacing={4} my={3.5}>
+        <NextLink href="/portfolio">
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
+            My portfolio
+          </Button>
+        </NextLink>
+        <a href="https://github.com/Raghuboi" target="_blank" rel="noreferrer">
+          <Button
+            leftIcon={<IoLogoGithub />}
+            bg={useColorModeValue('#2E2E2E', 'whiteAlpha.200')}
+            _hover={{
+              bg: useColorModeValue('#000000', '#454545')
+            }}
+            color="white"
+          >
+            GitHub
+          </Button>
+        </a>
+        <a href="https://github.com/Raghuboi" target="_blank" rel="noreferrer">
+          <Button leftIcon={<IoLogoLinkedin />} colorScheme="facebook">
+            LinkedIn
+          </Button>
+        </a>
+      </Wrap>
     </>
   )
-}
+})
 
 export default Page
