@@ -18,7 +18,12 @@ import {
   useColorModeValue,
   useToast
 } from '@chakra-ui/react'
-import { CheckIcon, EmailIcon, ExternalLinkIcon } from '@chakra-ui/icons'
+import {
+  CheckIcon,
+  EmailIcon,
+  ExternalLinkIcon,
+  ChatIcon
+} from '@chakra-ui/icons'
 import Section from '../components/section'
 import Layout from '../components/layouts/projects'
 
@@ -78,17 +83,8 @@ const Contact = () => {
       <Heading as="h3" variant="section-title">
         Connect
       </Heading>
-      <Link isExternal href="mailto:raghunathprabhakar@gmail.com">
-        <Box justify="center" my={3}>
-          <EmailIcon />
-          <Text fontSize={16} fontWeight="semibold" display="inline">
-            {' '}
-            raghunathprabhakar@gmail.com
-          </Text>
-          <ExternalLinkIcon mx={1} />
-        </Box>
-      </Link>
-
+      <Email />
+      <LinkedIn />
       <Spacer py={0.5} />
 
       <Layout title="Contact">
@@ -198,5 +194,39 @@ const CustomInputArea = ({ label, name, error, touched, ...props }) => {
         </FormControl>
       )}
     </Field>
+  )
+}
+
+const LinkedIn = () => {
+  return (
+    <>
+      <Link isExternal href="https://www.linkedin.com/in/raghunath-prabhakar/">
+        <Box justify="center" my={3}>
+          <ChatIcon />
+          <Text fontSize={16} fontWeight="semibold" display="inline">
+            {' '}
+            www.linkedin.com/in/raghunath-prabhakar/
+          </Text>
+          <ExternalLinkIcon mx={1} />
+        </Box>
+      </Link>
+    </>
+  )
+}
+
+const Email = () => {
+  return (
+    <>
+      <Link isExternal href="mailto:raghunathprabhakar@gmail.com">
+        <Box justify="center" my={3}>
+          <EmailIcon />
+          <Text fontSize={16} fontWeight="semibold" display="inline">
+            {' '}
+            raghunathprabhakar@gmail.com
+          </Text>
+          <ExternalLinkIcon mx={1} />
+        </Box>
+      </Link>
+    </>
   )
 }
