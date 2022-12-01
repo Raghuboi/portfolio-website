@@ -1,17 +1,18 @@
+import React from 'react'
 import {
   Container,
   Box,
-  HStack,
   Button,
   Heading,
   Link,
   Spacer,
   useColorModeValue,
   Alert,
-  Text
+  Text,
+  Wrap
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
@@ -81,8 +82,9 @@ const Page = () => {
           computing, and computer networks. Firm believer in Agile principles
           and values.
           <br />
-          <br />I want to work in places where I am the small fish in a big
-          pond. Would, eventually, like to have a career in Project Management.
+          <br />I want to work in places where I can learn and grow as a
+          developer. Would, eventually, like to have a career in Project
+          Management.
         </Paragraph>
 
         <CustomAccordianHomeTitle
@@ -107,33 +109,41 @@ const Page = () => {
           more to add. I am always thinking, constantly questioning, and forever
           learning."
         />
-
-        <HStack ref={ButtonDiv} justify="center" spacing={4} my={3.5}>
-          <NextLink href="/portfolio">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
-              My portfolio
-            </Button>
-          </NextLink>
-          <a
-            href="https://github.com/Raghuboi"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button
-              leftIcon={<IoLogoGithub />}
-              bg={useColorModeValue('#2E2E2E', 'whiteAlpha.200')}
-              _hover={{
-                bg: useColorModeValue('#000000', '#454545')
-              }}
-              color="white"
-            >
-              GitHub
-            </Button>
-          </a>
-        </HStack>
+        <MediaButtons ref={ButtonDiv} />
       </Section>
     </Container>
   )
 }
+
+const MediaButtons = React.forwardRef((props, ref) => {
+  return (
+    <>
+      <Wrap ref={ref} justify="center" spacing={4} my={3.5}>
+        <NextLink href="/portfolio">
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
+            My portfolio
+          </Button>
+        </NextLink>
+        <a href="https://github.com/Raghuboi" target="_blank" rel="noreferrer">
+          <Button
+            leftIcon={<IoLogoGithub />}
+            bg={useColorModeValue('#2E2E2E', 'whiteAlpha.200')}
+            _hover={{
+              bg: useColorModeValue('#000000', '#454545')
+            }}
+            color="white"
+          >
+            GitHub
+          </Button>
+        </a>
+        <a href="https://github.com/Raghuboi" target="_blank" rel="noreferrer">
+          <Button leftIcon={<IoLogoLinkedin />} colorScheme="facebook">
+            LinkedIn
+          </Button>
+        </a>
+      </Wrap>
+    </>
+  )
+})
 
 export default Page
