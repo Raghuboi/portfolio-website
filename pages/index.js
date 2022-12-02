@@ -136,7 +136,11 @@ const MediaButtons = React.forwardRef((props, ref) => {
             GitHub
           </Button>
         </a>
-        <a href="https://github.com/Raghuboi" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/raghunath-prabhakar/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Button leftIcon={<IoLogoLinkedin />} colorScheme="facebook">
             LinkedIn
           </Button>
