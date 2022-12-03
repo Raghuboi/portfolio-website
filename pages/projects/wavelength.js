@@ -13,7 +13,7 @@ import Layout from '../../components/layouts/projects'
 
 const Project = () => {
   return (
-    <Layout title="Student Net">
+    <Layout title="Wavelength">
       <Container className="noselect" pt={6}>
         <Title>Wavelength News Application</Title>
         <P>
@@ -73,7 +73,8 @@ const Project = () => {
         </List>
         <UnorderedList ml={4} my={4}>
           <ListItem>
-            Designed stateful Sign in/Sign up screens in React Native.
+            Designed and developed stateful Sign in/Sign up screens in React
+            Native.
           </ListItem>
           <ListItem>
             Designed User Profile screen; set up React Context API and pattern
@@ -105,7 +106,17 @@ const Project = () => {
             .
           </ListItem>
           <ListItem>
-            Conducted user surveys to better understand functional requirements.
+            Optimized app performance and loading times by implementing code
+            splitting, lazy loading, and bundling of JavaScript code.
+          </ListItem>
+          <ListItem>
+            Worked with the design team to implement responsive design and
+            ensure a consistent and user-friendly UI across different devices
+            and screen sizes.
+          </ListItem>
+          <ListItem>
+            Collaborated with the QA team to fix bugs and resolve issues, and
+            ensured app stability and reliability before each release.
           </ListItem>
         </UnorderedList>
         <ProjectImage
