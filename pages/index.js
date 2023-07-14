@@ -4,11 +4,10 @@ import {
   Box,
   Button,
   Heading,
-  Link,
   Spacer,
   useColorModeValue,
-  Alert,
   Text,
+  Link,
   Wrap
 } from '@chakra-ui/react'
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
@@ -38,37 +37,18 @@ const Page = () => {
         <Heading as="h2" variant="page-title">
           Raghunath Prabhakar
         </Heading>
+        <Text fontSize={25}>Full Stack Developer</Text>
       </Box>
 
       <Spacer p="0.5rem" />
 
       <Section>
-        <Alert
-          borderRadius={15}
-          fontSize={16}
-          mb={3}
-          px={4}
-          py={1}
-          variant={useColorModeValue('solid', 'subtle')}
-          colorScheme="purple"
-          status="warning"
-        >
-          <Text as="i">
-            “The illiterate of the 21st century will not be those who cannot
-            read and write, but those who cannot learn, unlearn, and relearn.” ―
-            Alvin Toffler
-          </Text>
-        </Alert>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <Paragraph>
-          I am a Full-stack developer based in Winnipeg, Manitoba with a passion
-          for Economics and Finance.
-          <br />
-          <br />
-          Double degree, B.Sc. Applied Computer Science and B.A. Economics from
-          the{' '}
+          Recent graduate with a double degree in Applied Computer Science
+          (B.Sc.) and Economics (B.A.) from the{' '}
           <Link
             href="https://www.uwinnipeg.ca/"
             isExternal
@@ -78,13 +58,11 @@ const Page = () => {
             University Of Winnipeg
             <ExternalLinkIcon mx="2px" />
           </Link>
-          . I am interested in security, UI/UX, OO design patterns, cloud
-          computing, and computer networks. Firm believer in Agile principles
-          and values.
           <br />
-          <br />I want to work in places where I can learn and grow as a
-          developer. Would, eventually, like to have a career in Project
-          Management.
+          <br />1 year of full-stack app development experience working at a
+          startup. Open source contributor and familiar with working in agile
+          teams. Flexible working across the stack and adapting to new
+          technologies.
         </Paragraph>
 
         <CustomAccordianHomeTitle
@@ -100,14 +78,12 @@ const Page = () => {
                 )
               }}
             >
-              About Me
+              Current Tech Stack
             </Heading>
           }
-          content="I am learning to be humble in an industry dominated by noise; to be
-          calm when everyone's excited. I am the person you can never quite
-          figure out— someone who always has something more to say, something
-          more to add. I am always thinking, constantly questioning, and forever
-          learning."
+          content={
+            'I am highly excited by the newer bleeding edge JS frameworks! Currently my top 2 are SvelteKit and Next 13. SvelteKit, while it has an incredible developer experience, falls behind because of the massive React Ecosystem and React 18 Server Components. I find Next 13 really powerful in combination with libraries like Typescript, GraphQL, tRPC, and TailwindCSS. As for databases my current go-tos are PostgreSQL and Redis (depending on project requirements)'
+          }
         />
         <MediaButtons ref={ButtonDiv} />
       </Section>
