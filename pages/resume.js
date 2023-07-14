@@ -63,19 +63,12 @@ const Resume = () => {
               <Text ml={6} fontWeight={500} display="inline">
                 B.Sc -{' '}
               </Text>
-              <Text display="inline">
-                Applied Computer Science (In progress)
-              </Text>
+              <Text display="inline">Applied Computer Science</Text>
               <br />
               <Text ml={6} fontWeight={500} display="inline">
                 B.A. -{' '}
               </Text>
-              <Text display="inline">Economics (In progress)</Text>
-              <br />
-              <Text fontSize={17} fontWeight={600} display="inline">
-                Google Careers Certification -{' '}
-              </Text>
-              <Text display="inline">Project Management</Text>
+              <Text display="inline">Economics</Text>
             </Box>
           </Box>
 
@@ -83,7 +76,7 @@ const Resume = () => {
             <ResumeHeading title="Experience" />
             <Box>
               <Text fontSize={18} fontWeight={600}>
-                Backend Developer - Wavelength Digital (2021 - Current)
+                Full Stack Developer - Wavelength Digital (2021 - 2022)
               </Text>
 
               <CustomAccordian
@@ -91,9 +84,9 @@ const Resume = () => {
                 openByDefault={true}
                 content={
                   <Text>
-                    A small-scale news application startup in collaboration with
-                    University of Calgary students. Wavelength was also selected
-                    in UCalgary&apos;s 2021{' '}
+                    A news application startup in started by University of
+                    Calgary graduates. Wavelength was also selected in
+                    UCalgary&apos;s 2021{' '}
                     <Link
                       display="inline"
                       isExternal
@@ -102,7 +95,7 @@ const Resume = () => {
                       Launchpad Program
                       <ExternalLinkIcon mx="2px" />
                     </Link>{' '}
-                    and is receiving funding from the University.
+                    and the Alberta Catalyzer program.
                   </Text>
                 }
               ></CustomAccordian>
@@ -146,7 +139,7 @@ const Resume = () => {
 
             <Box>
               <Text fontSize={18} fontWeight={600}>
-                Project Assistant - UW Code Force (2021 - Current)
+                Project Assistant - UW Code Force (2021 - 2022)
               </Text>
               <Link isExternal href="https://uwcodeforce.ca/">
                 https://uwcodeforce.ca/ <ExternalLinkIcon mx="2px" />
