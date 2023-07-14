@@ -82,7 +82,7 @@ const Page = () => {
             </Heading>
           }
           content={
-            'I am highly excited by the newer bleeding edge JS frameworks! Currently my top 2 are SvelteKit and Next 13. SvelteKit, while it has an incredible developer experience, falls behind because of the massive React Ecosystem and React 18 Server Components. I find Next 13 really powerful in combination with libraries like Typescript, GraphQL, tRPC, and TailwindCSS. As for databases my current go-tos are PostgreSQL and Redis (depending on project requirements)'
+            'I am excited about the newer bleeding edge JS frameworks. Currently my top 2 are SvelteKit and Next 13. SvelteKit, while it has an incredible developer experience, falls behind because of the massive React Ecosystem and React 18 Server Components. I find Next 13 really powerful in combination with libraries like Typescript, GraphQL, tRPC, and TailwindCSS. As for databases my current go-tos are PostgreSQL and Redis (depending on project requirements)'
           }
         />
         <MediaButtons ref={ButtonDiv} />
